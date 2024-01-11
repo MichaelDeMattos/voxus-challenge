@@ -30,6 +30,27 @@ To get this project up and running, follow these steps:
 
 3. Swagger Endpoint documentation based in Postman can be found at: https://github.com/MichaelDeMattos/voxus-challenge/docs/
 
+## Testing application
+
+1. Clone this repository:
+
+   ```bash
+   git clone <repository-url>
+   cd project-directory
+   ```
+   
+2. Installing project dependencies (recommended to use python virtualenv)
+   ```bash
+   python -m venv venv
+   source venv/bin/activate
+   pip install -r requirements.txt
+   ```
+   
+3. Running suite of tests
+   ```bash
+   pytest src/tests
+   ```
+
 ## Tech Stack
 
 - **Python**: Python is a high-level, interpreted, script, imperative, object-oriented, functional, dynamically-typed, and strongly-typed programming language.
