@@ -1,0 +1,76 @@
+{
+	"info": {
+		"_postman_id": "531197eb-f95d-4690-aad4-ff19069db38a",
+		"name": "voxus-challenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13997612"
+	},
+	"item": [
+		{
+			"name": "/api/sunrise_sunset",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{host}}:8080/api/sunrise_sunset?type=sunrise&latitude=-23.5653114&longitude=-46.642659",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"sunrise_sunset"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "sunrise"
+						},
+						{
+							"key": "latitude",
+							"value": "-23.5653114"
+						},
+						{
+							"key": "longitude",
+							"value": "-46.642659"
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "host",
+			"value": "localhost",
+			"type": "string"
+		}
+	]
+}
