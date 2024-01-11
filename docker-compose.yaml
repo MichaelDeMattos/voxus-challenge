@@ -9,13 +9,15 @@ services:
       volumes:
         - ./src:/home/foo/vonux-challenge/src/
       ports:
-        - '127.0.0.1:6000:5000'
+        - '127.0.0.1:6000:6000'
       networks:
         - vonux_challenge_default_network
       environment:
         INSTANCE_HOSTNAME: "api_instance_a"
         INSTANCE_PORT: "6000"
         RUN_TESTS_ON_THIS_INSTANCE: "true"
+      env_file:
+        - .env
       deploy:
         resources:
           limits:
@@ -30,13 +32,15 @@ services:
       volumes:
         - ./src:/home/foo/vonux-challenge/src/
       ports:
-        - '127.0.0.1:6001:5000'
+        - '127.0.0.1:6001:6001'
       networks:
         - vonux_challenge_default_network
       environment:
         INSTANCE_HOSTNAME: "api_instance_b"
         INSTANCE_PORT: "6001"
         RUN_TESTS_ON_THIS_INSTANCE: "false"
+      env_file:
+        - .env
       deploy:
         resources:
           limits:
