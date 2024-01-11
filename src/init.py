@@ -3,8 +3,6 @@
 import os
 import subprocess
 
-if os.getenv('TESTING') == 'true' and os.getenv('RUN_TESTS_ON_THIS_INSTANCE') == 'true':
-    subprocess.call('pytest tests')
 if os.getenv('DEVELOPMENT') == 'true':
     subprocess.call(
         f"python -m flask run -h {os.getenv('INSTANCE_HOSTNAME')} "
