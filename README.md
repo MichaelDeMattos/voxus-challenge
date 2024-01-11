@@ -38,7 +38,7 @@ To get this project up and running, follow these steps:
     - **Flask**: Flask is an HTTP framework for Python, simplifying API development and web applications.
     - **Pydantic**: Pydantic is the most widely used data validation library for Python.
     - **AIOHTTP**: Asynchronous HTTP Client/Server for asyncio and Python.
-    - **Gunicorn**: WSGI HTTP Server for UNIX
+    - **uWSGI**: WSGI HTTP Server for UNIX
 
 - **Redis**: Redis is an in-memory key-value store known for its low-latency and high-performance data retrieval.
 
