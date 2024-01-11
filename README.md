@@ -17,10 +17,9 @@ To get this project up and running, follow these steps:
    git clone <repository-url>
    cd project-directory
    ```
-2. Create a .env file and set environment variables that your project requires. Refer to the .env.dev or .env.test file for examples or create your self .env file for your working setup.
+2. Create a .env file and set environment variables that your project requires. Refer to the .env.dev file for examples or create your self .env file for your working setup.
    ```bash
    cat .env.dev > .env # for development mode
-   cat .env.test > .env # for testing application mode
    ```
 
 3. Build and start the Docker containers of docker-compose.yaml:
