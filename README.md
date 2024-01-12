@@ -28,7 +28,7 @@ To get this project up and running, follow these steps:
    docker compose --env-file .env up -d
    ```
 
-3. Swagger Endpoint documentation based in Postman can be found at: https://github.com/MichaelDeMattos/voxus-challenge/docs/
+3. Swagger Endpoint documentation based in Postman can be found at: [https://github.com/MichaelDeMattos/voxus-challenge/docs/](https://github.com/MichaelDeMattos/voxus-challenge/tree/main/docs)
 
 ## Testing application
 
